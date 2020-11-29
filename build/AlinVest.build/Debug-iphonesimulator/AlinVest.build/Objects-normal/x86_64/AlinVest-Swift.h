@@ -220,15 +220,23 @@ SWIFT_CLASS("_TtC8AlinVest11AppDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class UIButton;
 @class NSCoder;
 
 SWIFT_CLASS("_TtC8AlinVest19BottomNavigatorView")
 @interface BottomNavigatorView : UIStackView
+- (void)onClickTabItem:(UIButton * _Nonnull)sender;
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class UIButton;
+
+SWIFT_CLASS("_TtC8AlinVest10HeaderView")
+@interface HeaderView : UIStackView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8AlinVest11PagerHeader")
 @interface PagerHeader : UIStackView
