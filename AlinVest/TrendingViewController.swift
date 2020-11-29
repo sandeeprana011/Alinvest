@@ -18,17 +18,18 @@ class TrendingViewController: UIViewController {
 	}
 	
 	
-	let tableView = UITableView(forAutoLayout: ())
+	var tableView:UITableView!
 	
     func setupTableView() {
-		
+		self.tableView = UITableView(frame: self.view.frame, style: .grouped)
 		tableView.register(CellTrendingStock.self, forCellReuseIdentifier: "cell")
 		
 		tableView.delegate = self;
-//		tableView.backgroundColor = .yellow
+		tableView.backgroundColor = .white
 		tableView.dataSource = self;
 		self.view.addSubview(tableView)
 		tableView.reloadData()
+		tableView.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
 		tableView.autoPinEdgesToSuperviewEdges()
 		
     }
@@ -52,12 +53,20 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 70
+		return 100
 	}
 	
+//	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+//		return self.stocksRoot?.stockTrendTypes?[section].trendName ?? ""
+//	}
 	
+	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
+		let label = UILabel()
+		label.text = self.stocksRoot?.stockTrendTypes?[section].trendName ?? ""
+		label.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
+		return label
+	}
 	
-
 	
 }
 
@@ -72,6 +81,7 @@ class CellTrendingStock: UITableViewCell {
 		stackView.axis = .horizontal
 		stackView.distribution = .fill
 		stackView.alignment = .center;
+		stackView.spacing = 10
 		
 		let iStockIcon = UIImageView(image: UIImage(named: stock?.icon ?? ""));
 		
@@ -120,7 +130,9 @@ class CellTrendingStock: UITableViewCell {
 		stackView.addArrangedSubview(lChangeInPercent)
 		
 		self.contentView.addSubview(stackView)
-		stackView.autoMatch(.width, to: .width, of: self.contentView)
+//		stackView.autoMatch(.width, to: .width, of: self.contentView)
+		stackView.autoPinEdge(toSuperviewMargin: .left)
+		stackView.autoPinEdge(toSuperviewMargin: .right)
 //		
 	}
 }

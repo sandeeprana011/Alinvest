@@ -153,7 +153,6 @@ class PagerView: UIScrollView {
 	
 	func addPages(views:[UIView]) {
 		
-		
 		self.showsHorizontalScrollIndicator = false
 		
 		let stackView = UIStackView(forAutoLayout: ())
@@ -161,19 +160,20 @@ class PagerView: UIScrollView {
 		stackView.alignment = .fill
 		stackView.distribution = .fillEqually
 		stackView.axis = .horizontal;
-		
-		views.forEach { (view) in
-//			view.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
-			stackView.addArrangedSubview(view);
-			view.widthAnchor.constraint(equalToConstant: widthScreen).isActive = true
-			view.heightAnchor.constraint(equalToConstant: widthScreen).isActive = true
-		}
 		self.addSubview(stackView)
 		
+		views.forEach { (view) in
+			stackView.addArrangedSubview(view);
+			view.widthAnchor.constraint(equalToConstant: widthScreen).isActive = true
+			view.heightAnchor.constraint(equalTo: self.heightAnchor).isActive = true
+		}
+		
 		self.isPagingEnabled = true
+		self.bounces = false
+		self.isDirectionalLockEnabled = true
 		
 		let width:CGFloat = widthScreen * CGFloat(views.count);
-		self.contentSize = CGSize(width: width, height: 500)
+		self.contentSize = CGSize(width: width, height: views.first?.frame.height ?? 0.0)
 	}
 }
 
