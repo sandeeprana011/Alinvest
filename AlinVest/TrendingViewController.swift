@@ -105,6 +105,8 @@ class CellTrendingStock: UITableViewCell {
 		lTitleStock.font = UIFont.boldSystemFont(ofSize: 16)
 		
 		let lStockType = UILabel(forAutoLayout: ())
+		lStockType.font = UIFont.systemFont(ofSize: 14)
+		lStockType.textColor = .gray
 		lStockType.text = stock?.stockType ?? ""
 		
 		let stackLabels = UIStackView(arrangedSubviews: [lTitleStock,lStockType])
@@ -120,10 +122,10 @@ class CellTrendingStock: UITableViewCell {
 		
 		switch stock?.percent ?? 0.0 {
 		case let x where x > 0:
-			lChangeInPercent.backgroundColor = .systemGreen
+			lChangeInPercent.backgroundColor = #colorLiteral(red: 0.241068244, green: 0.8594331145, blue: 0.705801785, alpha: 1)
 			break;
 		case let x where x < 0:
-			lChangeInPercent.backgroundColor = .systemRed
+			lChangeInPercent.backgroundColor = #colorLiteral(red: 0.9908463359, green: 0.4157002866, blue: 0.4209897518, alpha: 1)
 			break;
 		default:
 			lChangeInPercent.backgroundColor = .gray
