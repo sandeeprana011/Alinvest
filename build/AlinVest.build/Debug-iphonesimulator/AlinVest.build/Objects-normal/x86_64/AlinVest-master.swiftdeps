@@ -1,7 +1,9 @@
 version: "Apple Swift version 5.3 (swiftlang-1200.0.29.2 clang-1200.0.30.1)"
-options: "e46431b1b8535603e267501049ec6b9c"
-build_time: [1606630669, 786057000]
+options: "3d10df3752aef27e26800b59c4ec1ff6"
+build_time: [1606641770, 711930000]
 inputs:
-  "/Users/sandeeprana/xcode/AlinVest/AlinVest/ViewController.swift": [1606630666, 764965384]
+  "/Users/sandeeprana/xcode/AlinVest/AlinVest/ViewController.swift": [1606641770, 140440757]
   "/Users/sandeeprana/xcode/AlinVest/AlinVest/AppDelegate.swift": [1606630666, 754264126]
+  "/Users/sandeeprana/xcode/AlinVest/AlinVest/TrendingViewController.swift": [1606641044, 608004488]
+  "/Users/sandeeprana/xcode/AlinVest/AlinVest/Extension+UIView.swift": [1606631379, 755597084]
   "/Users/sandeeprana/xcode/AlinVest/AlinVest/SceneDelegate.swift": [1606630666, 763353874]

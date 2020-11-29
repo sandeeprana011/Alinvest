@@ -3,16 +3,19 @@
 	archiveVersion = 1;
 	classes = {
 	};
-	objectVersion = 50;
+	objectVersion = 51;
 	objects = {
 
 /* Begin PBXBuildFile section */
 		054DF5722573748A00E2B9D4 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5712573748A00E2B9D4 /* AppDelegate.swift */; };
 		054DF5742573748A00E2B9D4 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5732573748A00E2B9D4 /* SceneDelegate.swift */; };
 		054DF5762573748A00E2B9D4 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5752573748A00E2B9D4 /* ViewController.swift */; };
-		054DF5792573748A00E2B9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054DF5772573748A00E2B9D4 /* Main.storyboard */; };
 		054DF57B2573748B00E2B9D4 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 054DF57A2573748B00E2B9D4 /* Assets.xcassets */; };
 		054DF57E2573748B00E2B9D4 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054DF57C2573748B00E2B9D4 /* LaunchScreen.storyboard */; };
+		054DF589257374FC00E2B9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054DF5772573748A00E2B9D4 /* Main.storyboard */; };
+		054DF58C2573774A00E2B9D4 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF58B2573774A00E2B9D4 /* Extension+UIView.swift */; };
+		054DF5932573854800E2B9D4 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5922573854800E2B9D4 /* TrendingViewController.swift */; };
+		4B601FDF98E6BC216FC84592 /* Pods_AlinVest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476F11DCFED55B5EE8FA8019 /* Pods_AlinVest.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +27,11 @@
 		054DF57A2573748B00E2B9D4 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		054DF57D2573748B00E2B9D4 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		054DF57F2573748B00E2B9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		054DF58B2573774A00E2B9D4 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
+		054DF5922573854800E2B9D4 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		1159A16F02FE89453A392F39 /* Pods-AlinVest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlinVest.debug.xcconfig"; path = "Target Support Files/Pods-AlinVest/Pods-AlinVest.debug.xcconfig"; sourceTree = "<group>"; };
+		476F11DCFED55B5EE8FA8019 /* Pods_AlinVest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlinVest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DA0DAD3D60AD9B2C3FCA8A1C /* Pods-AlinVest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlinVest.release.xcconfig"; path = "Target Support Files/Pods-AlinVest/Pods-AlinVest.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -31,6 +39,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4B601FDF98E6BC216FC84592 /* Pods_AlinVest.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -42,6 +51,8 @@
 			children = (
 				054DF5702573748A00E2B9D4 /* AlinVest */,
 				054DF56F2573748A00E2B9D4 /* Products */,
+				3831201EDA652F7FA463710C /* Pods */,
+				0A398C7BF952E99F7C80A9CF /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -59,12 +70,31 @@
 				054DF5712573748A00E2B9D4 /* AppDelegate.swift */,
 				054DF5732573748A00E2B9D4 /* SceneDelegate.swift */,
 				054DF5752573748A00E2B9D4 /* ViewController.swift */,
+				054DF5922573854800E2B9D4 /* TrendingViewController.swift */,
 				054DF5772573748A00E2B9D4 /* Main.storyboard */,
 				054DF57A2573748B00E2B9D4 /* Assets.xcassets */,
 				054DF57C2573748B00E2B9D4 /* LaunchScreen.storyboard */,
+				054DF58B2573774A00E2B9D4 /* Extension+UIView.swift */,
 				054DF57F2573748B00E2B9D4 /* Info.plist */,
 			);
 			path = AlinVest;
+			sourceTree = "<group>";
+		};
+		0A398C7BF952E99F7C80A9CF /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				476F11DCFED55B5EE8FA8019 /* Pods_AlinVest.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		3831201EDA652F7FA463710C /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				1159A16F02FE89453A392F39 /* Pods-AlinVest.debug.xcconfig */,
+				DA0DAD3D60AD9B2C3FCA8A1C /* Pods-AlinVest.release.xcconfig */,
+			);
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -74,9 +104,11 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 054DF5822573748B00E2B9D4 /* Build configuration list for PBXNativeTarget "AlinVest" */;
 			buildPhases = (
+				ACA4A0FD476087646158EF0F /* [CP] Check Pods Manifest.lock */,
 				054DF56A2573748A00E2B9D4 /* Sources */,
 				054DF56B2573748A00E2B9D4 /* Frameworks */,
 				054DF56C2573748A00E2B9D4 /* Resources */,
+				D789D75324D6280AB929FAD5 /* [CP] Embed Pods Frameworks */,
 			);
 			buildRules = (
 			);
@@ -124,13 +156,55 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				054DF589257374FC00E2B9D4 /* Main.storyboard in Resources */,
 				054DF57E2573748B00E2B9D4 /* LaunchScreen.storyboard in Resources */,
 				054DF57B2573748B00E2B9D4 /* Assets.xcassets in Resources */,
-				054DF5792573748A00E2B9D4 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		ACA4A0FD476087646158EF0F /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-AlinVest-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D789D75324D6280AB929FAD5 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlinVest/Pods-AlinVest-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-AlinVest/Pods-AlinVest-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-AlinVest/Pods-AlinVest-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
 		054DF56A2573748A00E2B9D4 /* Sources */ = {
@@ -139,6 +213,8 @@
 			files = (
 				054DF5762573748A00E2B9D4 /* ViewController.swift in Sources */,
 				054DF5722573748A00E2B9D4 /* AppDelegate.swift in Sources */,
+				054DF5932573854800E2B9D4 /* TrendingViewController.swift in Sources */,
+				054DF58C2573774A00E2B9D4 /* Extension+UIView.swift in Sources */,
 				054DF5742573748A00E2B9D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -283,6 +359,7 @@
 		};
 		054DF5832573748B00E2B9D4 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 1159A16F02FE89453A392F39 /* Pods-AlinVest.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
@@ -302,6 +379,7 @@
 		};
 		054DF5842573748B00E2B9D4 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = DA0DAD3D60AD9B2C3FCA8A1C /* Pods-AlinVest.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
