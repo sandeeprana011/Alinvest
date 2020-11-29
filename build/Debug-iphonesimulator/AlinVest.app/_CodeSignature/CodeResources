@@ -10,7 +10,7 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/01J-lp-oVM-view-Ze5-6b-2t3.nib</key>
 		<data>
-		G0EDHXrPVHBa5ycC3FHZkCevD3k=
+		jNt7VZ5yDZ6a0Fv/AaMC7BCNFf8=
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
 		<data>
@@ -18,11 +18,11 @@
 		</data>
 		<key>Base.lproj/LaunchScreen.storyboardc/UIViewController-01J-lp-oVM.nib</key>
 		<data>
-		+w77Z1qobF/v6XCO90g3125lNww=
+		99U0LY96NZ0hQPqIG/wJfn4SDVM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<data>
-		hphbcLf6RQK6jTpqbCqeeZs+CE4=
+		g5y6iYqjeAsVRacwd7pU/THpvzM=
 		</data>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
 		<data>
@@ -30,7 +30,7 @@
 		</data>
 		<key>Base.lproj/Main.storyboardc/UIViewController-BYZ-38-t0r.nib</key>
 		<data>
-		xyZv73tS7EWkE6b4KKX4kV7JmNE=
+		VRHnz5reon+kf/kbIaUWag36nO4=
 		</data>
 		<key>Frameworks/PureLayout.framework/Info.plist</key>
 		<data>
@@ -38,7 +38,7 @@
 		</data>
 		<key>Frameworks/PureLayout.framework/PureLayout</key>
 		<data>
-		2oywcGQ3dCR2sMyQ6BTCO5lB/z4=
+		YO2DMjCbATCGJxlzA3ahME7QQKc=
 		</data>
 		<key>Frameworks/PureLayout.framework/_CodeSignature/CodeResources</key>
 		<data>
@@ -66,7 +66,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			cC+DCZjMqWkiLritg3NY7qbNLYhUuD/FSxZKvpFbhTk=
+			XUei1fme34f8GoNnLhjX2x7+XNRcHOYaOAGrAxs1i3s=
 			</data>
 		</dict>
 		<key>Base.lproj/LaunchScreen.storyboardc/Info.plist</key>
@@ -80,14 +80,14 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			RzGanpY/ISJ0EBY6+/XOv0vvsvrUQGSzfhsRzEKczxk=
+			k48iIyLnhbR/z1GIdZvSsAvj5KTAmmXE15IY4M2VDZI=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/BYZ-38-t0r-view-8bC-Xf-vdC.nib</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			yrVcUok1NAQXAJL5ByKCmHr891lue7BxOwUmrYNVMAY=
+			fOe1tRPZx8ZwkbAXz+WrvkmxWL8UI0IC9ejBAN/d6Pw=
 			</data>
 		</dict>
 		<key>Base.lproj/Main.storyboardc/Info.plist</key>
@@ -101,7 +101,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			Qwu/80UhkZV/uSAfJPw1OrFzTL0yXRDxuPWL11cGCsM=
+			33VEQ1wUCGH1HrdEJXpwj1OGrk+M9Y3W7QIFW0yFK1k=
 			</data>
 		</dict>
 		<key>Frameworks/PureLayout.framework/Info.plist</key>
@@ -115,7 +115,7 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			+ERepq8Vm2VXsDtFof+QUeOz1nDu5Q28/gUALsp80Rs=
+			JnV3hadRRnbEpBiYFkelRMZYHmTLm9YzhJFz80NoQ6Y=
 			</data>
 		</dict>
 		<key>Frameworks/PureLayout.framework/_CodeSignature/CodeResources</key>

@@ -53,7 +53,7 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 	}
 	
 	func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-		return 100
+		return 80
 	}
 	
 //	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
@@ -61,10 +61,25 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 //	}
 	
 	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
-		let label = UILabel()
+		let stack = UIStackView()
+		
+		stack.alignment = .fill
+		stack.distribution = .fill
+		
+		let dummyView = UILabel()
+		dummyView.text = "   "
+		dummyView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
+		dummyView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
+//		dummyView.backgroundColor = .yellow
+		stack.addArrangedSubview(dummyView)
+		let label = UILabel(frame: CGRect(origin: tableView.frame.origin, size: CGSize(width: 100, height: 30)));
 		label.text = self.stocksRoot?.stockTrendTypes?[section].trendName ?? ""
-		label.layoutMargins = UIEdgeInsets(top: 20, left: 20, bottom: 20, right: 20)
-		return label
+		label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+		label.heightAnchor.constraint(equalToConstant: 30).isActive = true
+		label.textAlignment = .left
+		label.font = UIFont.boldSystemFont(ofSize: 16)
+		stack.addArrangedSubview(label)
+		return stack
 	}
 	
 	
@@ -132,6 +147,7 @@ class CellTrendingStock: UITableViewCell {
 		self.contentView.addSubview(stackView)
 //		stackView.autoMatch(.width, to: .width, of: self.contentView)
 		stackView.autoPinEdge(toSuperviewMargin: .left)
+		stackView.autoCenterInSuperview()
 		stackView.autoPinEdge(toSuperviewMargin: .right)
 //		
 	}
