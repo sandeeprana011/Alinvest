@@ -28,12 +28,14 @@ class ViewController: UIViewController {
 		let windowInsets = UIApplication.shared.windows.first?.safeAreaInsets
 		rootStackView.autoPinEdgesToSuperviewEdges(with: UIEdgeInsets(top: windowInsets?.top ?? 0, left: 0, bottom: windowInsets?.bottom ?? 0, right: 0))
 		
+		
 		do { //#MARK: adding header 
 			let headerView = HeaderView(forAutoLayout: ())
 			rootStackView.addArrangedSubview(headerView)
 			headerView.heightAnchor.constraint(equalToConstant: 40).isActive = true
+			headerView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+			headerView.isLayoutMarginsRelativeArrangement = true
 			headerView.setHeaderViewAndTitle(title:"Explore")
-			
 		}
 		
 		
@@ -42,6 +44,8 @@ class ViewController: UIViewController {
 			let pagerHeader = PagerHeader(forAutoLayout: ())
 			pagerHeader.setTitles(titles: ["Category","Themes","Trending"]);
 			pagerHeader.heightAnchor.constraint(equalToConstant: 45).isActive = true
+			pagerHeader.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+			pagerHeader.isLayoutMarginsRelativeArrangement = true
 			pagerHeader.onTitleClickedCallback = { index in
 				pager.scrollToPage(index:index);
 			} 

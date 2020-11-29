@@ -56,9 +56,6 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 		return 80
 	}
 	
-//	func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-//		return self.stocksRoot?.stockTrendTypes?[section].trendName ?? ""
-//	}
 	
 	func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
 		let stack = UIStackView()
@@ -66,12 +63,6 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 		stack.alignment = .fill
 		stack.distribution = .fill
 		
-		let dummyView = UILabel()
-		dummyView.text = "   "
-		dummyView.setContentHuggingPriority(.defaultHigh, for: .horizontal)
-		dummyView.setContentCompressionResistancePriority(.defaultLow, for: .horizontal)
-//		dummyView.backgroundColor = .yellow
-		stack.addArrangedSubview(dummyView)
 		let label = UILabel(frame: CGRect(origin: tableView.frame.origin, size: CGSize(width: 100, height: 30)));
 		label.text = self.stocksRoot?.stockTrendTypes?[section].trendName ?? ""
 		label.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
@@ -79,6 +70,8 @@ extension TrendingViewController: UITableViewDelegate,UITableViewDataSource {
 		label.textAlignment = .left
 		label.font = UIFont.boldSystemFont(ofSize: 16)
 		stack.addArrangedSubview(label)
+		stack.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+		stack.isLayoutMarginsRelativeArrangement = true
 		return stack
 	}
 	
@@ -109,6 +102,7 @@ class CellTrendingStock: UITableViewCell {
 		
 		let lTitleStock = UILabel(forAutoLayout: ())
 		lTitleStock.text = stock?.name ?? ""
+		lTitleStock.font = UIFont.boldSystemFont(ofSize: 16)
 		
 		let lStockType = UILabel(forAutoLayout: ())
 		lStockType.text = stock?.stockType ?? ""
@@ -146,9 +140,11 @@ class CellTrendingStock: UITableViewCell {
 		
 		self.contentView.addSubview(stackView)
 //		stackView.autoMatch(.width, to: .width, of: self.contentView)
-		stackView.autoPinEdge(toSuperviewMargin: .left)
+		stackView.autoPinEdge(toSuperviewEdge: .left)
 		stackView.autoCenterInSuperview()
-		stackView.autoPinEdge(toSuperviewMargin: .right)
+		stackView.autoPinEdge(toSuperviewEdge: .right)
+		stackView.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
+		stackView.isLayoutMarginsRelativeArrangement = true
 //		
 	}
 }
