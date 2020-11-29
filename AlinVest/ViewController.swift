@@ -9,6 +9,11 @@ import UIKit
 import PureLayout
 
 class ViewController: UIViewController {
+	
+	
+	let vcTrending = TrendingViewController()
+	let vcTrending2 = TrendingViewController()
+	let vcTrending3 = TrendingViewController()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
@@ -46,12 +51,10 @@ class ViewController: UIViewController {
 		
 		do { //#MARK: Adding Pager ScrollView
 			
-			let vcTrending = TrendingViewController()
-			let vcTrending2 = TrendingViewController()
-			let vcTrending3 = TrendingViewController()
 			
 			pager.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
 			pager.setContentCompressionResistancePriority(.defaultHigh, for: .horizontal)
+			
 			rootStackView.addArrangedSubview(pager);
 			pager.addPages(views: [vcTrending.view,vcTrending2.view,vcTrending3.view]);
 			
@@ -158,17 +161,19 @@ class PagerView: UIScrollView {
 		stackView.alignment = .fill
 		stackView.distribution = .fillEqually
 		stackView.axis = .horizontal;
-		stackView.setContentHuggingPriority(.defaultLow, for: .vertical)
 		
 		views.forEach { (view) in
+//			view.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
 			stackView.addArrangedSubview(view);
 			view.widthAnchor.constraint(equalToConstant: widthScreen).isActive = true
+			view.heightAnchor.constraint(equalToConstant: widthScreen).isActive = true
 		}
 		self.addSubview(stackView)
+		
 		self.isPagingEnabled = true
 		
 		let width:CGFloat = widthScreen * CGFloat(views.count);
-		self.contentSize = CGSize(width: width, height: self.contentSize.height)
+		self.contentSize = CGSize(width: width, height: 500)
 	}
 }
 
