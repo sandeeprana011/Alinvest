@@ -15,6 +15,7 @@
 		054DF589257374FC00E2B9D4 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 054DF5772573748A00E2B9D4 /* Main.storyboard */; };
 		054DF58C2573774A00E2B9D4 /* Extension+UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF58B2573774A00E2B9D4 /* Extension+UIView.swift */; };
 		054DF5932573854800E2B9D4 /* TrendingViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5922573854800E2B9D4 /* TrendingViewController.swift */; };
+		054DF5962574160C00E2B9D4 /* CategoryViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 054DF5952574160C00E2B9D4 /* CategoryViewController.swift */; };
 		4B601FDF98E6BC216FC84592 /* Pods_AlinVest.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 476F11DCFED55B5EE8FA8019 /* Pods_AlinVest.framework */; };
 /* End PBXBuildFile section */
 
@@ -29,6 +30,7 @@
 		054DF57F2573748B00E2B9D4 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		054DF58B2573774A00E2B9D4 /* Extension+UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Extension+UIView.swift"; sourceTree = "<group>"; };
 		054DF5922573854800E2B9D4 /* TrendingViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingViewController.swift; sourceTree = "<group>"; };
+		054DF5952574160C00E2B9D4 /* CategoryViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoryViewController.swift; sourceTree = "<group>"; };
 		1159A16F02FE89453A392F39 /* Pods-AlinVest.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlinVest.debug.xcconfig"; path = "Target Support Files/Pods-AlinVest/Pods-AlinVest.debug.xcconfig"; sourceTree = "<group>"; };
 		476F11DCFED55B5EE8FA8019 /* Pods_AlinVest.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_AlinVest.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		DA0DAD3D60AD9B2C3FCA8A1C /* Pods-AlinVest.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-AlinVest.release.xcconfig"; path = "Target Support Files/Pods-AlinVest/Pods-AlinVest.release.xcconfig"; sourceTree = "<group>"; };
@@ -71,6 +73,7 @@
 				054DF5732573748A00E2B9D4 /* SceneDelegate.swift */,
 				054DF5752573748A00E2B9D4 /* ViewController.swift */,
 				054DF5922573854800E2B9D4 /* TrendingViewController.swift */,
+				054DF5952574160C00E2B9D4 /* CategoryViewController.swift */,
 				054DF5772573748A00E2B9D4 /* Main.storyboard */,
 				054DF57A2573748B00E2B9D4 /* Assets.xcassets */,
 				054DF57C2573748B00E2B9D4 /* LaunchScreen.storyboard */,
@@ -215,6 +218,7 @@
 				054DF5722573748A00E2B9D4 /* AppDelegate.swift in Sources */,
 				054DF5932573854800E2B9D4 /* TrendingViewController.swift in Sources */,
 				054DF58C2573774A00E2B9D4 /* Extension+UIView.swift in Sources */,
+				054DF5962574160C00E2B9D4 /* CategoryViewController.swift in Sources */,
 				054DF5742573748A00E2B9D4 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

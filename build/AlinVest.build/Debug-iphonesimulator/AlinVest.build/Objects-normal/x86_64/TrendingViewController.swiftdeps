@@ -23,6 +23,7 @@ provides-dynamic-lookup:
 - "name"
 - "numberOfSections"
 - "percent"
+- "percentDescription"
 - "setupTableView"
 - "stackView"
 - "stockTrendTypes"
@@ -71,6 +72,7 @@ depends-top-level:
 - "UIViewController"
 - !private "UnicodeScalarType"
 - !private "_ColorLiteralType"
+- !private "percent"
 - !private "stackView"
 - !private "stocksRoot"
 - !private "tableView"
@@ -1290,6 +1292,7 @@ depends-member:
 - ["8AlinVest5StockC", "init"]
 - ["8AlinVest5StockC", "name"]
 - ["8AlinVest5StockC", "percent"]
+- ["8AlinVest5StockC", "percentDescription"]
 - ["8AlinVest5StockC", "stockType"]
 - !private ["8AlinVest10StocksRootC", "Stock"]
 - ["8AlinVest10StocksRootC", "StocksRoot"]
@@ -3153,4 +3156,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "db083c22ed48e09a09405d5b3ca6bee1"
+interface-hash: "3f557cdfcff93a76b5c02e5b37a13ca6"

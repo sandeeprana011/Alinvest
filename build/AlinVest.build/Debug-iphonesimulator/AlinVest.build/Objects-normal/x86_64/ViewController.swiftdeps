@@ -48,6 +48,7 @@ depends-top-level:
 - !private "CGPoint"
 - !private "CGSize"
 - !private "CastingPrecedence"
+- "CategoryViewController"
 - "FloatLiteralType"
 - "HeaderView"
 - "Int"
@@ -187,6 +188,7 @@ depends-member:
 - !private ["s7CVarArgP", "CGFloat"]
 - !private ["s7CVarArgP", "CGPoint"]
 - !private ["s7CVarArgP", "CGSize"]
+- ["s7CVarArgP", "CategoryViewController"]
 - !private ["s7CVarArgP", "HeaderView"]
 - !private ["s7CVarArgP", "Int"]
 - !private ["s7CVarArgP", "NavItem"]
@@ -267,6 +269,9 @@ depends-member:
 - !private ["s7CVarArgP", "widthAnchor"]
 - !private ["s7CVarArgP", "widthScreen"]
 - ["s7CVarArgP", "windows"]
+- ["8AlinVest22CategoryViewControllerC", ""]
+- ["8AlinVest22CategoryViewControllerC", "init"]
+- !private ["8AlinVest22CategoryViewControllerC", "view"]
 - ["Sl", ""]
 - !private ["Sl", "count"]
 - !private ["Sl", "enumerated"]
@@ -284,6 +289,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "CGFloat"]
 - !private ["s28CustomDebugStringConvertibleP", "CGPoint"]
 - !private ["s28CustomDebugStringConvertibleP", "CGSize"]
+- ["s28CustomDebugStringConvertibleP", "CategoryViewController"]
 - !private ["s28CustomDebugStringConvertibleP", "HeaderView"]
 - !private ["s28CustomDebugStringConvertibleP", "Int"]
 - !private ["s28CustomDebugStringConvertibleP", "NavItem"]
@@ -383,6 +389,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "CGFloat"]
 - !private ["s23CustomStringConvertibleP", "CGPoint"]
 - !private ["s23CustomStringConvertibleP", "CGSize"]
+- ["s23CustomStringConvertibleP", "CategoryViewController"]
 - !private ["s23CustomStringConvertibleP", "HeaderView"]
 - !private ["s23CustomStringConvertibleP", "Int"]
 - !private ["s23CustomStringConvertibleP", "NavItem"]
@@ -504,6 +511,7 @@ depends-member:
 - !private ["SQ", "CGFloat"]
 - !private ["SQ", "CGPoint"]
 - !private ["SQ", "CGSize"]
+- ["SQ", "CategoryViewController"]
 - !private ["SQ", "HeaderView"]
 - !private ["SQ", "Int"]
 - !private ["SQ", "NavItem"]
@@ -683,6 +691,7 @@ depends-member:
 - !private ["SH", "CGFloat"]
 - !private ["SH", "CGPoint"]
 - !private ["SH", "CGSize"]
+- ["SH", "CategoryViewController"]
 - !private ["SH", "HeaderView"]
 - !private ["SH", "Int"]
 - !private ["SH", "NavItem"]
@@ -801,6 +810,7 @@ depends-member:
 - ["So8NSCodingP", "CGFloat"]
 - !private ["So8NSCodingP", "CGPoint"]
 - !private ["So8NSCodingP", "CGSize"]
+- ["So8NSCodingP", "CategoryViewController"]
 - !private ["So8NSCodingP", "HeaderView"]
 - ["So8NSCodingP", "Int"]
 - ["So8NSCodingP", "NavItem"]
@@ -898,6 +908,7 @@ depends-member:
 - !private ["So9NSCopyingP", "systemIndigo"]
 - !private ["So9NSCopyingP", "white"]
 - !private ["So26NSExtensionRequestHandlingP", "BottomNavigatorView"]
+- ["So26NSExtensionRequestHandlingP", "CategoryViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "HeaderView"]
 - !private ["So26NSExtensionRequestHandlingP", "NavItem"]
 - !private ["So26NSExtensionRequestHandlingP", "PagerHeader"]
@@ -939,6 +950,7 @@ depends-member:
 - ["So8NSObjectC", "CGFloat"]
 - !private ["So8NSObjectC", "CGPoint"]
 - !private ["So8NSObjectC", "CGSize"]
+- ["So8NSObjectC", "CategoryViewController"]
 - !private ["So8NSObjectC", "HeaderView"]
 - ["So8NSObjectC", "Int"]
 - ["So8NSObjectC", "NavItem"]
@@ -1042,6 +1054,7 @@ depends-member:
 - ["So8NSObjectP", "CGFloat"]
 - !private ["So8NSObjectP", "CGPoint"]
 - !private ["So8NSObjectP", "CGSize"]
+- ["So8NSObjectP", "CategoryViewController"]
 - !private ["So8NSObjectP", "HeaderView"]
 - ["So8NSObjectP", "Int"]
 - ["So8NSObjectP", "NavItem"]
@@ -1396,6 +1409,7 @@ depends-member:
 - ["So21UIAppearanceContainerP", "CGFloat"]
 - !private ["So21UIAppearanceContainerP", "CGPoint"]
 - !private ["So21UIAppearanceContainerP", "CGSize"]
+- ["So21UIAppearanceContainerP", "CategoryViewController"]
 - !private ["So21UIAppearanceContainerP", "HeaderView"]
 - ["So21UIAppearanceContainerP", "Int"]
 - ["So21UIAppearanceContainerP", "NavItem"]
@@ -1485,6 +1499,7 @@ depends-member:
 - !private ["So7UIColorC", "systemIndigo"]
 - !private ["So7UIColorC", "white"]
 - !private ["So18UIContentContainerP", "BottomNavigatorView"]
+- ["So18UIContentContainerP", "CategoryViewController"]
 - !private ["So18UIContentContainerP", "HeaderView"]
 - !private ["So18UIContentContainerP", "NavItem"]
 - !private ["So18UIContentContainerP", "PagerHeader"]
@@ -1667,6 +1682,7 @@ depends-member:
 - ["So18UIFocusEnvironmentP", "CGFloat"]
 - !private ["So18UIFocusEnvironmentP", "CGPoint"]
 - !private ["So18UIFocusEnvironmentP", "CGSize"]
+- ["So18UIFocusEnvironmentP", "CategoryViewController"]
 - !private ["So18UIFocusEnvironmentP", "HeaderView"]
 - ["So18UIFocusEnvironmentP", "Int"]
 - ["So18UIFocusEnvironmentP", "NavItem"]
@@ -1963,6 +1979,7 @@ depends-member:
 - ["So30UIPasteConfigurationSupportingP", "CGFloat"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGPoint"]
 - !private ["So30UIPasteConfigurationSupportingP", "CGSize"]
+- ["So30UIPasteConfigurationSupportingP", "CategoryViewController"]
 - !private ["So30UIPasteConfigurationSupportingP", "HeaderView"]
 - ["So30UIPasteConfigurationSupportingP", "Int"]
 - ["So30UIPasteConfigurationSupportingP", "NavItem"]
@@ -2041,6 +2058,7 @@ depends-member:
 - ["So11UIResponderC", "CGFloat"]
 - !private ["So11UIResponderC", "CGPoint"]
 - !private ["So11UIResponderC", "CGSize"]
+- ["So11UIResponderC", "CategoryViewController"]
 - !private ["So11UIResponderC", "HeaderView"]
 - ["So11UIResponderC", "Int"]
 - ["So11UIResponderC", "NavItem"]
@@ -2119,6 +2137,7 @@ depends-member:
 - ["So30UIResponderStandardEditActionsP", "CGFloat"]
 - !private ["So30UIResponderStandardEditActionsP", "CGPoint"]
 - !private ["So30UIResponderStandardEditActionsP", "CGSize"]
+- ["So30UIResponderStandardEditActionsP", "CategoryViewController"]
 - !private ["So30UIResponderStandardEditActionsP", "HeaderView"]
 - ["So30UIResponderStandardEditActionsP", "Int"]
 - ["So30UIResponderStandardEditActionsP", "NavItem"]
@@ -2255,6 +2274,7 @@ depends-member:
 - ["So11UIStackViewC", "setTitles"]
 - ["So11UIStackViewC", "updateAllButtons"]
 - !private ["So16UIStateRestoringP", "BottomNavigatorView"]
+- ["So16UIStateRestoringP", "CategoryViewController"]
 - !private ["So16UIStateRestoringP", "HeaderView"]
 - !private ["So16UIStateRestoringP", "NavItem"]
 - !private ["So16UIStateRestoringP", "PagerHeader"]
@@ -2278,6 +2298,7 @@ depends-member:
 - ["So18UITraitEnvironmentP", "CGFloat"]
 - !private ["So18UITraitEnvironmentP", "CGPoint"]
 - !private ["So18UITraitEnvironmentP", "CGSize"]
+- ["So18UITraitEnvironmentP", "CategoryViewController"]
 - !private ["So18UITraitEnvironmentP", "HeaderView"]
 - ["So18UITraitEnvironmentP", "Int"]
 - ["So18UITraitEnvironmentP", "NavItem"]
@@ -2352,6 +2373,7 @@ depends-member:
 - ["So23UIUserActivityRestoringP", "CGFloat"]
 - !private ["So23UIUserActivityRestoringP", "CGPoint"]
 - !private ["So23UIUserActivityRestoringP", "CGSize"]
+- ["So23UIUserActivityRestoringP", "CategoryViewController"]
 - !private ["So23UIUserActivityRestoringP", "HeaderView"]
 - ["So23UIUserActivityRestoringP", "Int"]
 - ["So23UIUserActivityRestoringP", "NavItem"]
@@ -2490,6 +2512,7 @@ depends-member:
 - !private ["So6UIViewC", "widthAnchor"]
 - ["So6UIViewC", "widthScreen"]
 - !private ["So16UIViewControllerC", "BottomNavigatorView"]
+- ["So16UIViewControllerC", "CategoryViewController"]
 - !private ["So16UIViewControllerC", "HeaderView"]
 - !private ["So16UIViewControllerC", "NavItem"]
 - !private ["So16UIViewControllerC", "PagerHeader"]
@@ -2508,6 +2531,7 @@ depends-member:
 - ["So8UIWindowC", "frame"]
 - !private ["So8UIWindowC", "safeAreaInsets"]
 - !private ["8AlinVest14ViewControllerC", "BottomNavigatorView"]
+- ["8AlinVest14ViewControllerC", "CategoryViewController"]
 - !private ["8AlinVest14ViewControllerC", "HeaderView"]
 - !private ["8AlinVest14ViewControllerC", "NavItem"]
 - !private ["8AlinVest14ViewControllerC", "PagerHeader"]
@@ -2565,6 +2589,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGFloat"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGPoint"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "CGSize"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "CategoryViewController"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "HeaderView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "Int"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NavItem"]
@@ -2645,6 +2670,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGFloat"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGPoint"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CGSize"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "CategoryViewController"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "HeaderView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "Int"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NavItem"]
@@ -2814,6 +2840,7 @@ depends-nominal:
 - "So6CGRectV"
 - !private "So6CGSizeV"
 - "s7CVarArgP"
+- "8AlinVest22CategoryViewControllerC"
 - "Sl"
 - "SL"
 - "10Foundation15ContiguousBytesP"
@@ -2973,4 +3000,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "5005e82f766a2bd80e39596a24eb513d"
+interface-hash: "a7736371e05924ee5487ee126823beba"

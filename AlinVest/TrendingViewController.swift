@@ -116,7 +116,7 @@ class CellTrendingStock: UITableViewCell {
 		stackView.addArrangedSubview(stackLabels)
 		
 		let lChangeInPercent = UILabel(forAutoLayout: ());
-		lChangeInPercent.text = "\(stock?.percent?.description ?? "-")%"
+		lChangeInPercent.text = "\(stock?.percentDescription() ?? "")"
 		lChangeInPercent.font = UIFont.boldSystemFont(ofSize: 13);
 		lChangeInPercent.textColor = .white
 		
@@ -211,4 +211,19 @@ class Stock {
 	var icon:String?
 	var percent:Double?
 	var stockType:String?
+	
+	func percentDescription() -> String? {
+		if let perc = percent {
+			if perc > 0 {
+				return "+\(perc)%"
+			} else if perc < 0{
+				return "\(perc.description)%" 
+			} else {
+				return ""
+			}
+		}else {
+			return nil
+		}
+		
+	}
 }

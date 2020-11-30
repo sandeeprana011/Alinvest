@@ -23,6 +23,7 @@ provides-dynamic-lookup:
 - "name"
 - "numberOfSections"
 - "percent"
+- "percentDescription"
 - "setupTableView"
 - "stackView"
 - "stockTrendTypes"
@@ -71,6 +72,7 @@ depends-top-level:
 - "UIViewController"
 - !private "UnicodeScalarType"
 - !private "_ColorLiteralType"
+- !private "percent"
 - !private "stackView"
 - !private "stocksRoot"
 - !private "tableView"
@@ -235,6 +237,7 @@ depends-member:
 - !private ["s7CVarArgP", "stackView"]
 - !private ["s7CVarArgP", "stocksRoot"]
 - !private ["s7CVarArgP", "subscript"]
+- !private ["s7CVarArgP", "systemFont"]
 - ["s7CVarArgP", "tableView"]
 - ["s7CVarArgP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s7CVarArgP", "text"]
@@ -357,6 +360,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "stocks"]
 - !private ["s28CustomDebugStringConvertibleP", "stocksRoot"]
 - !private ["s28CustomDebugStringConvertibleP", "subscript"]
+- !private ["s28CustomDebugStringConvertibleP", "systemFont"]
 - ["s28CustomDebugStringConvertibleP", "tableView"]
 - ["s28CustomDebugStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s28CustomDebugStringConvertibleP", "text"]
@@ -468,6 +472,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "stocks"]
 - !private ["s23CustomStringConvertibleP", "stocksRoot"]
 - !private ["s23CustomStringConvertibleP", "subscript"]
+- !private ["s23CustomStringConvertibleP", "systemFont"]
 - ["s23CustomStringConvertibleP", "tableView"]
 - ["s23CustomStringConvertibleP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["s23CustomStringConvertibleP", "text"]
@@ -615,6 +620,7 @@ depends-member:
 - !private ["SQ", "stocks"]
 - !private ["SQ", "stocksRoot"]
 - !private ["SQ", "subscript"]
+- !private ["SQ", "systemFont"]
 - ["SQ", "tableView"]
 - ["SQ", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SQ", "text"]
@@ -801,6 +807,7 @@ depends-member:
 - !private ["SH", "stocks"]
 - !private ["SH", "stocksRoot"]
 - !private ["SH", "subscript"]
+- !private ["SH", "systemFont"]
 - ["SH", "tableView"]
 - ["SH", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["SH", "text"]
@@ -931,6 +938,7 @@ depends-member:
 - !private ["So9NSCopyingP", "constraintLessThanOrEqualToAnchor"]
 - !private ["So9NSCopyingP", "constraintLessThanOrEqualToConstant"]
 - !private ["So9NSCopyingP", "gray"]
+- !private ["So9NSCopyingP", "systemFont"]
 - !private ["So9NSCopyingP", "white"]
 - ["So26NSExtensionRequestHandlingP", "CGFloat"]
 - !private ["So26NSExtensionRequestHandlingP", "CGRect"]
@@ -1088,6 +1096,8 @@ depends-member:
 - !private ["So8NSObjectC", "spacing"]
 - ["So8NSObjectC", "stackView"]
 - ["So8NSObjectC", "stocksRoot"]
+- !private ["So8NSObjectC", "systemFont"]
+- !private ["So8NSObjectC", "systemFontOfSize"]
 - !private ["So8NSObjectC", "systemImageNamed"]
 - ["So8NSObjectC", "tableView"]
 - ["So8NSObjectC", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1197,6 +1207,8 @@ depends-member:
 - !private ["So8NSObjectP", "spacing"]
 - ["So8NSObjectP", "stackView"]
 - ["So8NSObjectP", "stocksRoot"]
+- !private ["So8NSObjectP", "systemFont"]
+- !private ["So8NSObjectP", "systemFontOfSize"]
 - !private ["So8NSObjectP", "systemImageNamed"]
 - ["So8NSObjectP", "tableView"]
 - ["So8NSObjectP", "tableViewDidEndMultipleSelectionInteraction"]
@@ -1280,6 +1292,7 @@ depends-member:
 - ["8AlinVest5StockC", "init"]
 - ["8AlinVest5StockC", "name"]
 - ["8AlinVest5StockC", "percent"]
+- ["8AlinVest5StockC", "percentDescription"]
 - ["8AlinVest5StockC", "stockType"]
 - !private ["8AlinVest10StocksRootC", "Stock"]
 - ["8AlinVest10StocksRootC", "StocksRoot"]
@@ -1883,6 +1896,7 @@ depends-member:
 - !private ["So30UIFocusItemScrollableContainerP", "reloadData"]
 - !private ["So30UIFocusItemScrollableContainerP", "setContentCompressionResistancePriority"]
 - !private ["So6UIFontC", "boldSystemFont"]
+- !private ["So6UIFontC", "systemFont"]
 - !private ["So27UIGestureRecognizerDelegateP", "CGFloat"]
 - !private ["So27UIGestureRecognizerDelegateP", "CGSize"]
 - ["So27UIGestureRecognizerDelegateP", "Stock"]
@@ -2809,6 +2823,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "spacing"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stackView"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "stocksRoot"]
+- !private ["10Foundation27_KeyValueCodingAndObservingP", "systemFont"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableView"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "text"]
@@ -2889,6 +2904,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "spacing"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stackView"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "stocksRoot"]
+- !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "systemFont"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableView"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "tableViewDidEndMultipleSelectionInteraction"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "text"]
@@ -3140,4 +3156,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "db083c22ed48e09a09405d5b3ca6bee1"
+interface-hash: "3f557cdfcff93a76b5c02e5b37a13ca6"

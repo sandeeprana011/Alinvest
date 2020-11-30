@@ -231,6 +231,15 @@ SWIFT_CLASS("_TtC8AlinVest19BottomNavigatorView")
 - (nonnull instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+@class NSBundle;
+
+SWIFT_CLASS("_TtC8AlinVest22CategoryViewController")
+@interface CategoryViewController : UIViewController
+- (void)viewDidLoad;
+- (nonnull instancetype)initWithNibName:(NSString * _Nullable)nibNameOrNil bundle:(NSBundle * _Nullable)nibBundleOrNil OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 
 SWIFT_CLASS("_TtC8AlinVest17CellTrendingStock")
 @interface CellTrendingStock : UITableViewCell
@@ -260,6 +269,13 @@ SWIFT_CLASS("_TtC8AlinVest9PagerView")
 - (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
 @end
 
+
+SWIFT_CLASS("_TtC8AlinVest11RowCategory")
+@interface RowCategory : UIView
+- (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;
+- (nullable instancetype)initWithCoder:(NSCoder * _Nonnull)coder OBJC_DESIGNATED_INITIALIZER;
+@end
+
 @class UIWindow;
 @class UIScene;
 
@@ -275,7 +291,6 @@ SWIFT_CLASS("_TtC8AlinVest13SceneDelegate")
 - (nonnull instancetype)init OBJC_DESIGNATED_INITIALIZER;
 @end
 
-@class NSBundle;
 
 SWIFT_CLASS("_TtC8AlinVest22TrendingViewController")
 @interface TrendingViewController : UIViewController
@@ -285,7 +300,6 @@ SWIFT_CLASS("_TtC8AlinVest22TrendingViewController")
 @end
 
 @class UITableView;
-@class UIView;
 
 @interface TrendingViewController (SWIFT_EXTENSION(AlinVest)) <UITableViewDataSource, UITableViewDelegate>
 - (UITableViewCell * _Nonnull)tableView:(UITableView * _Nonnull)tableView cellForRowAtIndexPath:(NSIndexPath * _Nonnull)indexPath SWIFT_WARN_UNUSED_RESULT;

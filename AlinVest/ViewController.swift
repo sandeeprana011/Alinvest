@@ -12,7 +12,7 @@ class ViewController: UIViewController {
 	
 	
 	let vcTrending = TrendingViewController()
-	let vcTrending2 = TrendingViewController()
+	let vcTrending2 = CategoryViewController()
 	let vcTrending3 = TrendingViewController()
 
 	override func viewDidLoad() {
