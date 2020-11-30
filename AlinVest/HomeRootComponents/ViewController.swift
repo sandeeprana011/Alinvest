@@ -70,7 +70,7 @@ class ViewController: UIViewController {
 			let bottomNavigator = BottomNavigatorView()
 			rootStackView.addArrangedSubview(bottomNavigator)
 			bottomNavigator.heightAnchor.constraint(equalToConstant: 70).isActive = true
-			bottomNavigator.addButtons(items: [NavItem(icon: "house"), NavItem(icon: "magnifyingglass"), NavItem(icon: "person.circle"), NavItem(icon: "person.circle"), NavItem(icon: "person.circle")])
+			bottomNavigator.addButtons(items: [NavItem(icon: "house"), NavItem(icon: "magnifyingglass"), NavItem(icon: "person.circle"), NavItem(icon: "cloud"), NavItem(icon: "printer")])
 			
 		}
 		

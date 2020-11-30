@@ -23,7 +23,7 @@ class BottomNavigatorView: UIStackView {
 					button.tintColor = .white
 					button.backgroundColor = .systemBlue
 				}else {
-					button.tintColor = .systemBlue
+					button.tintColor = .gray
 					button.backgroundColor = .white
 				}
 			}
@@ -37,8 +37,11 @@ class BottomNavigatorView: UIStackView {
 		items.forEach { (item) in
 			let button = UIButton(forAutoLayout: ())
 			button.setImage(UIImage(systemName: item.icon ?? ""), for: .normal);
+			
 			button.addTarget(self, action: #selector(self.onClickTabItem(_:)), for: .touchUpInside)
 			self.addArrangedSubview(button)
 		}
+		(self.arrangedSubviews.first as? UIButton)?.isSelected = true
+		self.updateAllButtons()
 	}
 }
