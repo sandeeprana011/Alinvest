@@ -337,7 +337,6 @@ SWIFT_CLASS("_TtC8AlinVest22TrendingViewController")
 @end
 
 
-
 SWIFT_CLASS("_TtC8AlinVest14ViewController")
 @interface ViewController : UIViewController
 - (void)viewDidLoad;

@@ -147,6 +147,7 @@ depends-member:
 - ["ST", ""]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
+- ["So18UIFocusEnvironmentP", ""]
 - ["So30UIPasteConfigurationSupportingP", "ConnectionOptions"]
 - ["So30UIPasteConfigurationSupportingP", "UIScene"]
 - ["So30UIPasteConfigurationSupportingP", "UISceneSession"]
@@ -293,6 +294,7 @@ depends-nominal:
 - "ST"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- "So18UIFocusEnvironmentP"
 - "So30UIPasteConfigurationSupportingP"
 - "So11UIResponderC"
 - "So30UIResponderStandardEditActionsP"
