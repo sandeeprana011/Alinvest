@@ -58,6 +58,7 @@ depends-top-level:
 - "PagerView"
 - "String"
 - !private "StringLiteralType"
+- "ThemeseViewController"
 - "TrendingViewController"
 - "UIApplication"
 - "UIButton"
@@ -194,6 +195,7 @@ depends-member:
 - !private ["s7CVarArgP", "NavItem"]
 - !private ["s7CVarArgP", "PagerHeader"]
 - !private ["s7CVarArgP", "PagerView"]
+- ["s7CVarArgP", "ThemeseViewController"]
 - ["s7CVarArgP", "TrendingViewController"]
 - ["s7CVarArgP", "UIApplication"]
 - !private ["s7CVarArgP", "UIButton"]
@@ -295,6 +297,7 @@ depends-member:
 - !private ["s28CustomDebugStringConvertibleP", "NavItem"]
 - !private ["s28CustomDebugStringConvertibleP", "PagerHeader"]
 - !private ["s28CustomDebugStringConvertibleP", "PagerView"]
+- ["s28CustomDebugStringConvertibleP", "ThemeseViewController"]
 - ["s28CustomDebugStringConvertibleP", "TrendingViewController"]
 - ["s28CustomDebugStringConvertibleP", "UIApplication"]
 - !private ["s28CustomDebugStringConvertibleP", "UIButton"]
@@ -395,6 +398,7 @@ depends-member:
 - !private ["s23CustomStringConvertibleP", "NavItem"]
 - !private ["s23CustomStringConvertibleP", "PagerHeader"]
 - !private ["s23CustomStringConvertibleP", "PagerView"]
+- ["s23CustomStringConvertibleP", "ThemeseViewController"]
 - ["s23CustomStringConvertibleP", "TrendingViewController"]
 - ["s23CustomStringConvertibleP", "UIApplication"]
 - !private ["s23CustomStringConvertibleP", "UIButton"]
@@ -517,6 +521,7 @@ depends-member:
 - !private ["SQ", "NavItem"]
 - !private ["SQ", "PagerHeader"]
 - !private ["SQ", "PagerView"]
+- ["SQ", "ThemeseViewController"]
 - ["SQ", "TrendingViewController"]
 - ["SQ", "UIApplication"]
 - !private ["SQ", "UIButton"]
@@ -697,6 +702,7 @@ depends-member:
 - !private ["SH", "NavItem"]
 - !private ["SH", "PagerHeader"]
 - !private ["SH", "PagerView"]
+- ["SH", "ThemeseViewController"]
 - ["SH", "TrendingViewController"]
 - ["SH", "UIApplication"]
 - !private ["SH", "UIButton"]
@@ -817,6 +823,7 @@ depends-member:
 - !private ["So8NSCodingP", "PagerHeader"]
 - !private ["So8NSCodingP", "PagerView"]
 - ["So8NSCodingP", "String"]
+- ["So8NSCodingP", "ThemeseViewController"]
 - ["So8NSCodingP", "TrendingViewController"]
 - ["So8NSCodingP", "UIApplication"]
 - ["So8NSCodingP", "UIButton"]
@@ -913,6 +920,7 @@ depends-member:
 - !private ["So26NSExtensionRequestHandlingP", "NavItem"]
 - !private ["So26NSExtensionRequestHandlingP", "PagerHeader"]
 - !private ["So26NSExtensionRequestHandlingP", "PagerView"]
+- ["So26NSExtensionRequestHandlingP", "ThemeseViewController"]
 - ["So26NSExtensionRequestHandlingP", "TrendingViewController"]
 - !private ["So26NSExtensionRequestHandlingP", "UIApplication"]
 - !private ["So26NSExtensionRequestHandlingP", "UIEdgeInsets"]
@@ -957,6 +965,7 @@ depends-member:
 - !private ["So8NSObjectC", "PagerHeader"]
 - !private ["So8NSObjectC", "PagerView"]
 - ["So8NSObjectC", "String"]
+- ["So8NSObjectC", "ThemeseViewController"]
 - ["So8NSObjectC", "TrendingViewController"]
 - ["So8NSObjectC", "UIApplication"]
 - ["So8NSObjectC", "UIButton"]
@@ -1061,6 +1070,7 @@ depends-member:
 - !private ["So8NSObjectP", "PagerHeader"]
 - !private ["So8NSObjectP", "PagerView"]
 - ["So8NSObjectP", "String"]
+- ["So8NSObjectP", "ThemeseViewController"]
 - ["So8NSObjectP", "TrendingViewController"]
 - ["So8NSObjectP", "UIApplication"]
 - ["So8NSObjectP", "UIButton"]
@@ -1265,6 +1275,9 @@ depends-member:
 - !private ["Sx", "init"]
 - ["s16TextOutputStreamP", ""]
 - ["s20TextOutputStreamableP", ""]
+- ["8AlinVest21ThemeseViewControllerC", ""]
+- ["8AlinVest21ThemeseViewControllerC", "init"]
+- !private ["8AlinVest21ThemeseViewControllerC", "view"]
 - ["8AlinVest22TrendingViewControllerC", ""]
 - ["8AlinVest22TrendingViewControllerC", "init"]
 - !private ["8AlinVest22TrendingViewControllerC", "view"]
@@ -1416,6 +1429,7 @@ depends-member:
 - !private ["So21UIAppearanceContainerP", "PagerHeader"]
 - !private ["So21UIAppearanceContainerP", "PagerView"]
 - ["So21UIAppearanceContainerP", "String"]
+- ["So21UIAppearanceContainerP", "ThemeseViewController"]
 - ["So21UIAppearanceContainerP", "TrendingViewController"]
 - ["So21UIAppearanceContainerP", "UIApplication"]
 - ["So21UIAppearanceContainerP", "UIButton"]
@@ -1493,6 +1507,10 @@ depends-member:
 - !private ["So8UIButtonC", "tag"]
 - !private ["So8UIButtonC", "tintColor"]
 - !private ["So8UIButtonC", "titleLabel"]
+- ["So26UICollectionViewDataSourceP", "init"]
+- !private ["So26UICollectionViewDataSourceP", "view"]
+- ["So24UICollectionViewDelegateP", "init"]
+- !private ["So24UICollectionViewDelegateP", "view"]
 - !private ["So7UIColorC", "black"]
 - !private ["So7UIColorC", "lightGray"]
 - !private ["So7UIColorC", "systemBlue"]
@@ -1504,6 +1522,7 @@ depends-member:
 - !private ["So18UIContentContainerP", "NavItem"]
 - !private ["So18UIContentContainerP", "PagerHeader"]
 - !private ["So18UIContentContainerP", "PagerView"]
+- ["So18UIContentContainerP", "ThemeseViewController"]
 - ["So18UIContentContainerP", "TrendingViewController"]
 - !private ["So18UIContentContainerP", "UIApplication"]
 - !private ["So18UIContentContainerP", "UIEdgeInsets"]
@@ -1689,6 +1708,7 @@ depends-member:
 - !private ["So18UIFocusEnvironmentP", "PagerHeader"]
 - !private ["So18UIFocusEnvironmentP", "PagerView"]
 - ["So18UIFocusEnvironmentP", "String"]
+- ["So18UIFocusEnvironmentP", "ThemeseViewController"]
 - ["So18UIFocusEnvironmentP", "TrendingViewController"]
 - ["So18UIFocusEnvironmentP", "UIApplication"]
 - ["So18UIFocusEnvironmentP", "UIButton"]
@@ -1986,6 +2006,7 @@ depends-member:
 - !private ["So30UIPasteConfigurationSupportingP", "PagerHeader"]
 - !private ["So30UIPasteConfigurationSupportingP", "PagerView"]
 - ["So30UIPasteConfigurationSupportingP", "String"]
+- ["So30UIPasteConfigurationSupportingP", "ThemeseViewController"]
 - ["So30UIPasteConfigurationSupportingP", "TrendingViewController"]
 - ["So30UIPasteConfigurationSupportingP", "UIApplication"]
 - ["So30UIPasteConfigurationSupportingP", "UIButton"]
@@ -2065,6 +2086,7 @@ depends-member:
 - !private ["So11UIResponderC", "PagerHeader"]
 - !private ["So11UIResponderC", "PagerView"]
 - ["So11UIResponderC", "String"]
+- ["So11UIResponderC", "ThemeseViewController"]
 - ["So11UIResponderC", "TrendingViewController"]
 - ["So11UIResponderC", "UIApplication"]
 - ["So11UIResponderC", "UIButton"]
@@ -2144,6 +2166,7 @@ depends-member:
 - !private ["So30UIResponderStandardEditActionsP", "PagerHeader"]
 - !private ["So30UIResponderStandardEditActionsP", "PagerView"]
 - ["So30UIResponderStandardEditActionsP", "String"]
+- ["So30UIResponderStandardEditActionsP", "ThemeseViewController"]
 - ["So30UIResponderStandardEditActionsP", "TrendingViewController"]
 - ["So30UIResponderStandardEditActionsP", "UIApplication"]
 - ["So30UIResponderStandardEditActionsP", "UIButton"]
@@ -2279,6 +2302,7 @@ depends-member:
 - !private ["So16UIStateRestoringP", "NavItem"]
 - !private ["So16UIStateRestoringP", "PagerHeader"]
 - !private ["So16UIStateRestoringP", "PagerView"]
+- ["So16UIStateRestoringP", "ThemeseViewController"]
 - ["So16UIStateRestoringP", "TrendingViewController"]
 - !private ["So16UIStateRestoringP", "UIApplication"]
 - !private ["So16UIStateRestoringP", "UIEdgeInsets"]
@@ -2305,6 +2329,7 @@ depends-member:
 - !private ["So18UITraitEnvironmentP", "PagerHeader"]
 - !private ["So18UITraitEnvironmentP", "PagerView"]
 - ["So18UITraitEnvironmentP", "String"]
+- ["So18UITraitEnvironmentP", "ThemeseViewController"]
 - ["So18UITraitEnvironmentP", "TrendingViewController"]
 - ["So18UITraitEnvironmentP", "UIApplication"]
 - ["So18UITraitEnvironmentP", "UIButton"]
@@ -2380,6 +2405,7 @@ depends-member:
 - !private ["So23UIUserActivityRestoringP", "PagerHeader"]
 - !private ["So23UIUserActivityRestoringP", "PagerView"]
 - ["So23UIUserActivityRestoringP", "String"]
+- ["So23UIUserActivityRestoringP", "ThemeseViewController"]
 - ["So23UIUserActivityRestoringP", "TrendingViewController"]
 - ["So23UIUserActivityRestoringP", "UIApplication"]
 - ["So23UIUserActivityRestoringP", "UIButton"]
@@ -2517,6 +2543,7 @@ depends-member:
 - !private ["So16UIViewControllerC", "NavItem"]
 - !private ["So16UIViewControllerC", "PagerHeader"]
 - !private ["So16UIViewControllerC", "PagerView"]
+- ["So16UIViewControllerC", "ThemeseViewController"]
 - ["So16UIViewControllerC", "TrendingViewController"]
 - !private ["So16UIViewControllerC", "UIApplication"]
 - !private ["So16UIViewControllerC", "UIEdgeInsets"]
@@ -2536,6 +2563,7 @@ depends-member:
 - !private ["8AlinVest14ViewControllerC", "NavItem"]
 - !private ["8AlinVest14ViewControllerC", "PagerHeader"]
 - !private ["8AlinVest14ViewControllerC", "PagerView"]
+- ["8AlinVest14ViewControllerC", "ThemeseViewController"]
 - ["8AlinVest14ViewControllerC", "TrendingViewController"]
 - !private ["8AlinVest14ViewControllerC", "UIApplication"]
 - !private ["8AlinVest14ViewControllerC", "UIEdgeInsets"]
@@ -2595,6 +2623,7 @@ depends-member:
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "NavItem"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PagerHeader"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "PagerView"]
+- ["10Foundation27_KeyValueCodingAndObservingP", "ThemeseViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "TrendingViewController"]
 - ["10Foundation27_KeyValueCodingAndObservingP", "UIApplication"]
 - !private ["10Foundation27_KeyValueCodingAndObservingP", "UIButton"]
@@ -2676,6 +2705,7 @@ depends-member:
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "NavItem"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PagerHeader"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "PagerView"]
+- ["10Foundation37_KeyValueCodingAndObservingPublishingP", "ThemeseViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "TrendingViewController"]
 - ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIApplication"]
 - !private ["10Foundation37_KeyValueCodingAndObservingPublishingP", "UIButton"]
@@ -2900,6 +2930,7 @@ depends-nominal:
 - "Sx"
 - "s16TextOutputStreamP"
 - "s20TextOutputStreamableP"
+- "8AlinVest21ThemeseViewControllerC"
 - "8AlinVest22TrendingViewControllerC"
 - !private "So48UIAccessibilityContentSizeCategoryImageAdjustingP"
 - "So29UIAccessibilityIdentificationP"
@@ -2907,6 +2938,8 @@ depends-nominal:
 - "So21UIAppearanceContainerP"
 - "So13UIApplicationC"
 - !private "So8UIButtonC"
+- "So26UICollectionViewDataSourceP"
+- "So24UICollectionViewDelegateP"
 - !private "So7UIColorC"
 - "So18UIContentContainerP"
 - !private "So30UIContentSizeCategoryAdjustingP"
@@ -3000,4 +3033,4 @@ depends-external:
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/UIKit.framework/Headers/UIKit.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/CoreText.framework/Headers/CoreText.apinotes"
 - "/Applications/Xcode.app/Contents/Developer/Platforms/iPhoneSimulator.platform/Developer/SDKs/iPhoneSimulator14.0.sdk/System/Library/Frameworks/Security.framework/Headers/Security.apinotes"
-interface-hash: "a7736371e05924ee5487ee126823beba"
+interface-hash: "e54184c6b827b9c03dae60819d683227"

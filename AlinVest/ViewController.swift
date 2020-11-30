@@ -11,9 +11,9 @@ import PureLayout
 class ViewController: UIViewController {
 	
 	
-	let vcTrending = TrendingViewController()
-	let vcTrending2 = CategoryViewController()
 	let vcTrending3 = TrendingViewController()
+	let vcTrending2 = CategoryViewController()
+	let vcTrending = ThemeseViewController()
 
 	override func viewDidLoad() {
 		super.viewDidLoad()
