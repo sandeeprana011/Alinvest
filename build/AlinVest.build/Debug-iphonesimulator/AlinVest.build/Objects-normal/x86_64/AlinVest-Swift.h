@@ -277,6 +277,11 @@ SWIFT_CLASS("_TtC8AlinVest9PagerView")
 @end
 
 
+@interface PagerView (SWIFT_EXTENSION(AlinVest)) <UIScrollViewDelegate>
+- (void)scrollViewDidEndDecelerating:(UIScrollView * _Nonnull)scrollView;
+@end
+
+
 SWIFT_CLASS("_TtC8AlinVest11RowCategory")
 @interface RowCategory : UIView
 - (nonnull instancetype)initWithFrame:(CGRect)frame OBJC_DESIGNATED_INITIALIZER;

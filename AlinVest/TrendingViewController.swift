@@ -29,6 +29,7 @@ class TrendingViewController: UIViewController {
 		tableView.dataSource = self;
 		self.view.addSubview(tableView)
 		tableView.reloadData()
+		self.tableView.showsVerticalScrollIndicator = false
 		tableView.setContentCompressionResistancePriority(.defaultHigh, for: .vertical)
 		tableView.autoPinEdgesToSuperviewEdges()
 		

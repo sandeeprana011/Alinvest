@@ -40,8 +40,9 @@ class ViewController: UIViewController {
 		
 		
 		let pager = PagerView(forAutoLayout: ())
+		let pagerHeader = PagerHeader(forAutoLayout: ())
+		
 		do { //#MARK: Adding Page Title view
-			let pagerHeader = PagerHeader(forAutoLayout: ())
 			pagerHeader.setTitles(titles: ["Category","Themes","Trending"]);
 			pagerHeader.heightAnchor.constraint(equalToConstant: 45).isActive = true
 			pagerHeader.layoutMargins = UIEdgeInsets(top: 10, left: 20, bottom: 10, right: 20)
@@ -61,6 +62,7 @@ class ViewController: UIViewController {
 			
 			rootStackView.addArrangedSubview(pager);
 			pager.addPages(views: [vcTrending.view,vcTrending2.view,vcTrending3.view]);
+			pager.pagerHeader = pagerHeader;
 			
 		}
 		
@@ -146,7 +148,11 @@ class HeaderView: UIStackView {
 	}
 }
 
+
 class PagerView: UIScrollView {
+	
+	var pagerHeader:PagerHeader?
+	
 	
 	let widthScreen:CGFloat =  { return UIApplication.shared.windows.first?.frame.width ?? 0.0 }()
 	
@@ -157,7 +163,10 @@ class PagerView: UIScrollView {
 	
 	func addPages(views:[UIView]) {
 		
+		self.delegate = self
+		
 		self.showsHorizontalScrollIndicator = false
+		self.showsVerticalScrollIndicator = false
 		
 		let stackView = UIStackView(forAutoLayout: ())
 		
@@ -177,12 +186,29 @@ class PagerView: UIScrollView {
 		self.isDirectionalLockEnabled = true
 		
 		let width:CGFloat = widthScreen * CGFloat(views.count);
-		self.contentSize = CGSize(width: width, height: views.first?.frame.height ?? 0.0)
+		self.contentSize = CGSize(width: width, height: self.frame.height)
+	}
+}
+
+extension PagerView:UIScrollViewDelegate {
+	func scrollViewDidEndDecelerating(_ scrollView: UIScrollView) {
+		let page = scrollView.contentOffset.x / self.widthScreen;
+		print(Int(page))
+		self.pagerHeader?.onPageMoved(index:Int(page));
 	}
 }
 
 
 class PagerHeader: UIStackView {
+	
+	func onPageMoved(index:Int){
+		self.arrangedSubviews.forEach { (view) in
+			(view as? UIButton)?.isSelected = false;
+		}
+		(self.arrangedSubviews.filter { (view) -> Bool in
+			return view is UIButton
+		}[index] as? UIButton)?.isSelected = true
+	}
 	
 	var onTitleClickedCallback: ((_ index:Int) -> Void)?;
 	
@@ -217,6 +243,8 @@ class PagerHeader: UIStackView {
 			}
 			
 			self.addArrangedSubview(button)
+			
+			self.onPageMoved(index: 0)
 			
 		}
 		

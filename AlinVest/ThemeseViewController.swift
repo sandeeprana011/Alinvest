@@ -23,8 +23,12 @@ class ThemeseViewController: UIViewController {
 		self.collectionView.backgroundColor = .white
 //		self.collectionView.setCollectionViewLayout(layout, animated: true)
 		self.view.addSubview(self.collectionView)
+		
+		self.collectionView.heightAnchor.constraint(equalToConstant: self.view.frame.height).isActive = true
+		
 		self.collectionView.delegate = self
 		self.collectionView.dataSource = self
+		self.collectionView.showsVerticalScrollIndicator = false
 		self.collectionView.register(CellThemesCollectionView.self, forCellWithReuseIdentifier: "collectionCell")
     }
     
